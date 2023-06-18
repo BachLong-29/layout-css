@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(#007bb2, #0d1423);
+}
+container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+.box {
+  position: relative;
+  height: 450px;
+  width: 300px;
+}
+.cardItem {
+  position: relative;
+  background-color: #9662b2;
+  height: 450px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.behind {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: 1px solid #ee3aa0;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 10px;
+  transition: 100ms;
+}
+.box:hover .behind {
+  top: -4px;
+  left: 4px;
+}
+.box:hover .two {
+  animation-name: example;
+  animation-duration: 200ms;
+  animation-fill-mode: forwards;
+}
+.two {
+  top: 0px;
+  left: 0px;
+  transition-delay: 100ms;
+}
+@keyframes example {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  50% {
+    top: -4px;
+    left: 4px;
+  }
+  100% {
+    top: -7px;
+    left: 6px;
+  }
+}
+.cardItem:before {
+  content: "";
+  bottom: -3px;
+  background: #000;
+  height: 85%;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 2;
+  background: linear-gradient(0deg, #000, 65%, transparent);
+}
+.cardItem:not(:last-child) {
+  margin-right: 40px;
+}
+.cardItem .main-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 350px;
+  width: 100%;
+  z-index: 1;
+  transition: 1s;
+}
+.blankBottom {
+  position: absolute;
+  bottom: 0;
+  height: 130px;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 4px 15px;
+  z-index: 3;
+}
+.blankRight {
+  position: absolute;
+  top: 200px;
+  left: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background: linear-gradient(90deg, #ee3aa0 0%, #5afdff 100%);
+  width: 450px;
+  height: 50px;
+  z-index: 3;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  transform: rotate(90deg);
+}
+
+.fname {
+  font-family: "Luckiest Guy", cursive;
+  font-size: 40px;
+  color: #e2edef;
+  padding-left: 10px;
+}
+
+.line {
+  width: 220px;
+  height: 1px;
+  background: #ee3aa0;
+  margin-bottom: 20px;
+}
+
+.desc {
+  color: #e2edef;
+  font-size: 12px;
+  width: 220px;
+}
+.code {
+  margin-right: 8px;
+  font-size: 11px;
+}
+.circle {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  height: 24px;
+  width: 24px;
+  background: transparent;
+  border: 6px solid #000;
+  border-radius: 50%;
+}
+.circleBig {
+  position: relative;
+  height: 34px;
+  width: 34px;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.standingLine {
+  height: 2px;
+  width: 40px;
+  background: #000;
+  margin: 0 10px 0 20px;
+}
+.blankRight img {
+  height: 50px;
+  width: 30px;
+  transform: rotate(90deg);
+}
+.title {
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Wallpoet", cursive;
+}
+
+.fade-name {
+  text-transform: uppercase;
+  position: absolute;
+  font-style: italic;
+  font-family: "Fredoka One", cursive;
+  transform: rotate(90deg);
+  top: 110px;
+  left: -118px;
+  font-size: 78px;
+  color: #00000042;
+  width: 100%;
+}
