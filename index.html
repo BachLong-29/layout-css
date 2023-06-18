@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Bars</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+          <li class="left">
+            <div class="flex">
+              <a href="#student">Student</a>
+              <div class="dot right"></div>
+            </div>
+          </li>
+          <li class="left">
+            <div class="flex">
+              <a href="#menu">Class</a>
+              <div class="dot right"></div>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="logo">학생<span>.</span></a>
+        <ul class="navigation">
+          <li class="right">
+            <div class="flex">
+              <div class="dot left"></div>
+              <a href="#exam">Exam</a>
+            </div>
+          </li>
+          <li class="right">
+            <div class="flex">
+              <div class="dot left"></div>
+              <a href="#exam">Sign up</a>
+            </div>
+          </li>
+        </ul>
+      </header>
+      <div class="detail">
+        <div class="ball"></div>
+        <div class="info">
+          <div class="rank">
+            SS
+            <div class="abc">RANK</div>
+          </div>
+          <div class="level">The forward F.W.</div>
+          <div class="name">CHA HAE IN</div>
+          <div class="nickname">(Daemon)</div>
+          <p>
+            Erling Braut Haaland (né Håland; born 21 July 2000) is a Norwegian
+            professional footballer who plays as a striker for Premier League
+            club Manchester City and the Norway national team.
+          </p>
+          <p>
+            Coming through the youth system, Haaland played at senior level for
+            Bryne's reserve and senior teams. He moved to Molde in 2017 (also
+            playing for their reserve team), with whom he spent two seasons.
+          </p>
+        </div>
+        <!-- <div class="avatar">
+          <div class="image">
+            <div class="item-name">CHA HAE IN</div>
+            <div class="item-name">CHA HAE IN</div>
+            <div class="item-name">CHA HAE IN</div>
+            <img src="./background1.jpg" height="40%" width="100%" />
+            <img src="./chahaein.png" height="70%" width="50%" />
+            <div class="item-name">CHA HAE IN</div>
+            <div class="item-name">CHA HAE IN</div>
+            <div class="item-name">CHA HAE IN</div>
+          </div>
+        </div> -->
+        <div class="tab">
+          <img src="./background1.jpg" height="50%" width="90%" />
+          <ul>
+            <li class="tabs selected" onclick="handleChangeTabs(this)">
+              Introduction
+            </li>
+            <li class="tabs" onclick="handleChangeTabs(this)">About</li>
+            <li class="tabs" onclick="handleChangeTabs(this)">Status</li>
+            <li class="tabs" onclick="handleChangeTabs(this)">Skills</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
